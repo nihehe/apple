@@ -58,7 +58,7 @@ nav .nav-three{
 }
 /*导航结束*/
 /*section开始*/
-.list{
+.list,.list ul{
      width: 100%;
      height: auto;
  }
@@ -110,9 +110,12 @@ nav .nav-three{
 }
 /*section结束*/
 /*六宫格开始*/
+.list1,.list1 ul{
+    height: auto;
+    width:100%;
+    overflow: hidden;
+}
 .list1 ul li{
-    height:592px;
-    width: 50%;
     float: left;
     border-left: 12px solid #fff;
     border-right: 6px solid #fff;
@@ -138,6 +141,129 @@ nav .nav-three{
     font-weight: 400;
 }
 /*六宫格结束*/
+/*底部开始*/
+footer{
+    height: 467px;
+    width: 100%;
+    background: #f2f2f2;
+}
+footer main{
+    height: 100%;
+    margin:0 auto;
+    overflow: hidden;
+    /*position: relative;*/
+}
+footer main .top{
+    width:100%;
+    height: 370px;
+}
+footer main ul{
+    height:auto;
+    width: 20%;
+    margin-top: 38px;
+    float: left;
+}
+footer main ul li{
+    font-size: 10px;
+    margin-bottom: 9.6px;
+}
+footer main ul li:first-child{
+    color: #333;
+    font-weight: bold;
+}
+footer main ul li .line{
+    font-size: 10px;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+footer main ul li .line:hover{
+    border-bottom: 1px solid #888;
+}
+footer main .third li:nth-child(4){
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
+footer main .forth li:nth-child(5){
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.more{
+    height:auto;
+    font-size: 10px;
+    color: #555;
+}
+.more .line{
+    color: #0070c9;
+}
+.more .line:hover{
+    border-bottom: 1px solid #0070c9 ;
+}
+.endding{
+    width:100%;
+    height: 26px;
+}
+.endding-first{
+    font-size: 10px;
+    color: #555;
+}
+.ending-second .line{
+    font-size: 10px;
+    color: #555;
+    padding:0 10px ;
+    border-right: 1px solid #d6d6d6;
+    box-sizing: content-box;
+}
+.ending-second .line1{
+    padding-left: 0;
+}
+.ending-second .line2{
+    border-right: none;
+}
+.ending-second .line:hover .lline{
+    border-bottom: 1px solid #888;
+}
+.ending-china{
+    width: 46px;
+    height: 18px;
+}
+.ending-china .line{
+    float: right;
+    font-size: 10px;
+    color: #888;
+}
+.china{
+    background: url(../img/china.png) no-repeat left center;
+    background-size: 16px 16px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding-right: 5px;
+    cursor: pointer;
+    float: left;
+}
+.chinese{
+    float: right;
+    font-size: 10px;
+    color: #555;
+}
+.ending-china .line:hover .chinese{
+    border-bottom: 1px solid #555 ;
+}
+.end{
+    font-size: 10px;
+    color: #555;
+}
+.end .line{
+    color: #555;
+}
+.end .line:hover{
+    border-bottom: 1px solid #888;
+}
+/*底部结束*/
 @media screen and (min-width: 1024px){
     header main{
         width:976px;
@@ -281,7 +407,7 @@ nav .nav-three{
         left: calc(50% + 0px);
         right: auto;
         bottom: 0;
-        top: auto;
+        top: 0;
         transform: translatex(-50%);
         /*bottom: 10px;*/
         background: url("../img/shop_for_college_large.jpg") no-repeat center;
@@ -296,6 +422,148 @@ nav .nav-three{
         font-size: 21px;
         line-height: 31px;
         color: #111;
+    }
+    footer{
+        height: 467px;
+        width: 100%;
+        background: #f2f2f2;
+    }
+    footer main{
+        height: 100%;
+        width:980px;
+        margin:0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    footer main ul{
+        height:auto;
+        width: 20%;
+        margin-top: 38px;
+        float: left;
+    }
+    footer main ul li{
+        font-size: 10px;
+        margin-bottom: 9.6px;
+    }
+    footer main ul li:first-child{
+        color: #333;
+        font-weight: bold;
+    }
+    footer main ul li .line{
+        font-size: 10px;
+        color: #555;
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+    footer main ul li .line:hover{
+        border-bottom: 1px solid #888;
+    }
+    footer main .third li:nth-child(4){
+        color: #333;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    footer main .forth li:nth-child(5){
+        color: #333;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .more{
+        width:100%;
+        height:auto;
+        margin-bottom: 7px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d6d6d6;
+        font-size: 10px;
+        color: #555;
+        box-sizing: content-box;
+        position: absolute;
+        left:0;
+        bottom: 63px;
+    }
+    .more .line:hover{
+        border-bottom: 1px solid #0070c9 ;
+    }
+    .endding{
+        width:100%;
+        height: 26px;
+        position: absolute;
+        left:0;
+        bottom: 37px;
+    }
+    .endding-first{
+        font-size: 10px;
+        color: #555;
+        position: relative;
+    }
+    .ending-second{
+        float: left;
+        position: absolute;
+        left:268px;
+        top: -4px;
+    }
+    .ending-second .line{
+        font-size: 10px;
+        color: #555;
+        padding:0 10px ;
+        border-right: 1px solid #d6d6d6;
+        box-sizing: content-box;
+    }
+    .ending-second .line1{
+        padding-left: 0;
+    }
+    .ending-second .line2{
+        border-right: none;
+    }
+    .ending-second .line:hover .lline{
+        border-bottom: 1px solid #888;
+    }
+    .ending-china{
+        width: 46px;
+        height: 18px;
+        position: absolute;
+        right:0;
+        top: 0;
+    }
+    .ending-china .line{
+        float: right;
+        font-size: 10px;
+        color: #888;
+    }
+    .china{
+        background: url(../img/china.png) no-repeat left center;
+        background-size: 16px 16px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        padding-right: 5px;
+        cursor: pointer;
+        float: left;
+    }
+    .chinese{
+        float: right;
+        font-size: 10px;
+        color: #555;
+    }
+    .ending-china .line:hover .chinese{
+        border-bottom: 1px solid #555 ;
+    }
+    .end{
+        font-size: 10px;
+        color: #555;
+        position: absolute;
+        left:0;
+        bottom: 20px;
+    }
+    .end .line{
+        color: #555;
+    }
+    .end .line:hover{
+        border-bottom: 1px solid #888;
+    }
+    .small{
+        display: none;
     }
 }
 @media screen and (max-width: 1024px){
@@ -441,7 +709,7 @@ nav .nav-three{
         left: calc(50% + 0px);
         right: auto;
         bottom: 0;
-        top: auto;
+        top: 0;
         transform: translatex(-50%);
         /*bottom: 10px;*/
         background: url("../img/shop_for_college_medium.jpg") no-repeat center;
@@ -456,6 +724,153 @@ nav .nav-three{
         font-size: 19px;
         line-height: 28px;
         color: #111;
+    }
+    footer{
+        height: 467px;
+        background: #f2f2f2;
+    }
+    footer main{
+        height: 100%;
+        padding: 0 22px;
+        margin:0 auto;
+        content:"";
+        display :block;
+        clear:both;
+        /*position: relative;*/
+    }
+    footer main ul{
+        height:auto;
+        width: 20%;
+        margin-top: 38px;
+        float: left;
+    }
+    footer main ul li{
+        font-size: 10px;
+        margin-bottom: 9.6px;
+    }
+    footer main ul li:first-child{
+        color: #333;
+        font-weight: bold;
+    }
+    footer main ul li .line{
+        font-size: 10px;
+        color: #555;
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
+    }
+    footer main ul li .line:hover{
+        border-bottom: 1px solid #888;
+    }
+    footer main .third li:nth-child(4){
+        color: #333;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    footer main .forth li:nth-child(5){
+        color: #333;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    footer main .more{
+        width:100%;
+        height:auto;
+        font-size: 10px;
+        color: #555;
+        box-sizing: content-box;
+        /*position: absolute;*/
+        /*left:0;*/
+        /*bottom: 63px;*/
+    }
+    .more div{
+        margin-bottom: 5px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+    .more .line:hover{
+        border-bottom: 1px solid #0070c9 ;
+    }
+    footer main .endding{
+        width:100%;
+        height: 26px;
+
+        /*position: absolute;*/
+        /*left:0;*/
+        /*bottom: 37px;*/
+    }
+    footer main .endding-first{
+        width: auto;
+        font-size: 10px;
+        color: #555;
+        float: left;
+        line-height: 26px;
+        /*position: relative;*/
+    }
+    footer main .ending-second{
+        float: left;
+        margin-left: 30px;
+    }
+    footer main .ending-second .line{
+        font-size: 10px;
+        color: #555;
+        padding:0 10px ;
+        border-right: 1px solid #d6d6d6;
+        box-sizing: content-box;
+    }
+    footer main .ending-second .line1{
+        padding-left: 0;
+    }
+    footer main .ending-second .line2{
+        border-right: none;
+    }
+    footer main .ending-second .line:hover .lline{
+        border-bottom: 1px solid #888;
+    }
+    footer main .ending-china{
+       float: right;
+    }
+    footer main .ending-china .line{
+        float: right;
+        font-size: 10px;
+        color: #888;
+        line-height: 23px;
+    }
+    footer main .china{
+        background: url(../img/china.png) no-repeat left center;
+        background-size: 16px 16px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        padding-right: 5px;
+        cursor: pointer;
+        float: left;
+        margin-top: 4px;
+    }
+    footer main .chinese{
+        float: right;
+        font-size: 10px;
+        color: #555;
+    }
+    footer main .ending-china .line:hover .chinese{
+        border-bottom: 1px solid #555 ;
+    }
+    footer main .end{
+        font-size: 10px;
+        color: #555;
+        float: left;
+        margin-top:3px ;
+        /*position: absolute;*/
+        /*left:0;*/
+        /*bottom: 20px;*/
+    }
+    footer main .end .line{
+        color: #555;
+    }
+    .end .line:hover{
+        border-bottom: 1px solid #888;
+    }
+    .small{
+        display: none;
     }
 }
 @media screen and (max-width: 768px){
@@ -649,7 +1064,7 @@ nav .nav-three{
         left: calc(50% + 0px);
         right: auto;
         bottom: 0;
-        top: auto;
+        top: 0;
         transform: translatex(-50%);
         /*bottom: 10px;*/
         background: url("../img/shop_for_college_small.jpg") no-repeat center;
@@ -664,5 +1079,123 @@ nav .nav-three{
         font-size: 19px;
         line-height: 28px;
         color: #111;
+    }
+    footer{
+        display: none;
+    }
+
+    .small{
+        display: block;
+        height: 444px;
+        background: #f2f2f2;
+    }
+    .small main{
+        padding: 0 22px;
+        overflow: hidden;
+    }
+    .small main .stop{
+        width:100%;
+    }
+    .small main ul{
+        height: auto;
+        margin-top: 22px;
+    }
+    .small main ul li{
+        width: 100%;
+        height: 35px;
+        border-bottom: 1px solid #d6d6d6;
+        line-height: 35px;
+        font-size: 10px;
+        color:#333;
+    }
+    .small main ul li a{
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        font-size: 10px;
+        color:#333;
+    }
+    .small main ul li a span{
+        float: right;
+        font-size: 16px;
+    }
+    .small main .more{
+        width:100%;
+        height:auto;
+        font-size: 10px;
+        color: #555;
+        margin-top: 18px;
+    }
+    .small main .more div{
+        border:none;
+    }
+    .more .line:hover{
+        border-bottom: 1px solid #0070c9;
+    }
+    .small main .endding-first{
+        width: auto;
+        font-size: 10px;
+        color: #555;
+        line-height: 26px;
+        margin-top: 12px;
+    }
+    .small main .ending-second{
+        margin-left: 0;
+    }
+    .small main .ending-second .line{
+        font-size: 10px;
+        color: #555;
+        padding:0 10px ;
+        border-right: 1px solid #d6d6d6;
+        box-sizing: content-box;
+    }
+    .small main .ending-second .line1{
+        padding-left: 0;
+    }
+    .ending-second .line2{
+        border-right: none;
+    }
+    .ending-second .line:hover .lline{
+        border-bottom: 1px solid #888;
+    }
+    .small main .ending-china{
+        margin-top: 4px;
+    }
+    .small main .ending-china .line{
+        font-size: 10px;
+        color: #888;
+        line-height: 23px;
+    }
+    .small main .china{
+        background: url(../img/china.png) no-repeat left center;
+        background-size: 16px 16px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        padding-right: 5px;
+        cursor: pointer;
+        float: left;
+        margin-top: 4px;
+    }
+    .small main .chinese{
+        float: right;
+        font-size: 10px;
+        color: #555;
+    }
+    .small main .ending-china .line:hover .chinese{
+        border-bottom: 1px solid #555 ;
+    }
+    .small main .end{
+        font-size: 10px;
+        color: #555;
+        margin-top:8px ;
+    }
+    .small main .end a{
+        color: #555;
+        font-size: 10px;
+        color: #555;
+    }
+    .small main .end a:hover{
+        text-decoration: underline;
     }
 }
